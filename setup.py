@@ -116,7 +116,7 @@ if not KERNELS_INSTALLED and (CUDA_VERSION or ROCM_VERSION):
         gpu_system_version = (
             f"cu{CUDA_VERSION}" if CUDA_VERSION else f"rocm{ROCM_VERSION}"
         )
-        kernels_version = get_latest_kernels_version("casper-hansen/AutoAWQ_kernels")
+        kernels_version = "0.0.6"
         python_version = "".join(platform.python_version_tuple()[:2])
         platform_name = platform.system().lower()
         architecture = platform.machine().lower()
